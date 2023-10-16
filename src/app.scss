@@ -31,8 +31,13 @@ $DarkGray: hsl(0, 0%, 59%);
   box-sizing: border-box;
   border: 0;
   font-size: 18px;
-  //   overflow-x: hidden;
+  //
   //   overflow-y: hidden;
+}
+body {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 h1 {
   font-size: 28px;
