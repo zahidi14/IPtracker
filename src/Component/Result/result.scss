@@ -1,0 +1,76 @@
+@import "../../app.scss";
+
+.result-container {
+  z-index: 99;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 15px;
+  .result {
+    .title {
+      text-transform: uppercase;
+      color: $DarkGray;
+      font-weight: 700;
+      font-size: 16px;
+      height: 20px;
+    }
+    .res {
+      font-weight: 700;
+      color: $VeryDarkGray;
+    }
+  }
+}
+
+@media only screen and (min-width: 376px) {
+  .result-container {
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    width: 80%;
+    .line {
+      border-left: 1px solid $DarkGray; /* Set the width, style, and color of the border */
+      height: 100px;
+      margin: auto 0;
+    }
+    .result {
+      flex-basis: 0;
+      width: 25%;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .title {
+        height: 30%;
+        margin: 0 auto;
+      }
+      .res {
+        font-size: 28px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .result-container {
+    display: block;
+    width: 90%;
+    padding: 20px;
+    .result {
+      font-size: 18px;
+      padding: 10px;
+      .title {
+        margin-bottom: 5px;
+      }
+      .res {
+        font-size: 20px;
+      }
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
